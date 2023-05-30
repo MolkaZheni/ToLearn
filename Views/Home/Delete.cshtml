@@ -1,0 +1,68 @@
+﻿@model LearnApp.Models.Course
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomFormateur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomFormateur)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duréeF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duréeF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.certifiée)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.certifiée)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descriptionF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descriptionF)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Delete" class="btn btn-default" /> |
+    <button onclick="javascript:history.back()">back</button>
+</div>
+    }
+    <div>
+        <a href="javascript:history.back()">Back to list</a>
+    </div>
+</div>

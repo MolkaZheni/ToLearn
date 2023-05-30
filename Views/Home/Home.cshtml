@@ -1,0 +1,68 @@
+﻿@model LearnApp.Models.Course
+@{
+    ViewBag.Title = "Home";
+}
+<style >
+    .home{
+        display:flex;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    .event {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 2px solid #c19a6b;
+        border-radius: 12px;
+        padding: 5px;
+        margin-bottom: 2%;
+        background-color: #eaddca;
+    }
+        .event h3 {
+            color: #65392c;
+        }
+</style>
+<h2>Events</h2>
+<div class="home">
+    <div class="event">
+        <h3>AI Informational Session</h3>
+        <h5>
+            Tuesday, January 1, 2023 10:00 am - 11:00 am
+            ONLINE EVENT
+            <input id="submit_button" type="submit" value="Register to attend" />
+        </h5>
+        <h6>
+            Register to Attend
+            Artificial Intelligence has transformed countless industries, and changed the way we all live and work. You can be part of what’s next by building your expertise in key techniques, tools, and knowledge fundamental to driving AI advancements.
+        </h6>
+    </div>
+    <div class="event">
+        <h3>Developing Your Entrepreneurial Skills</h3>
+
+        <h5>
+            Friday, December 22, 2022 11:00 am - 12:00 pm
+            ONLINE
+            <input id="submit_button" type="submit" value="Register to attend" />
+        </h5>
+        <h6>
+            Register to Attend
+            Great entrepreneurs have drive, dedication, and vital business knowledge. To foster success, it’s critical to develop your entrepreneurial skills and expertise before launching your new venture. In this webinar, you will hear more about the team and project-based course that has provided real-world training to hundreds of actual start-ups.
+
+            Join Mike Lyons, Raymond Levitt, and Pedram Mokrian as they discuss what you can expect from their course and answer your questions live.
+        </h6>
+    </div>
+    <div class="event">
+        <h3>
+            The Future of Metal 3D Printing
+        </h3>
+        <h5>
+            Wednesday, November 16, 2022 12:00 pm - 1:00 pm
+            ONLINE EVENT
+            <input id="submit_button" type="submit" value="Register to attend" />
+        </h5>
+        <h6>
+            Register to Attend
+            Metal 3D printing is an emerging technology that is enabling novel solutions in several industries. Join us in conversation with Professors Adrian Lew and Wei Cai of Stanford as we discuss the future of metal 3D printing.
+        </h6>
+    </div>
+    </div>

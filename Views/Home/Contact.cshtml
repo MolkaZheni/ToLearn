@@ -1,0 +1,48 @@
+﻿@model LearnApp.Models.Course
+@{
+    ViewBag.Title = "Contact";
+}
+<style>
+    .contact {
+        border: 2px solid #c19a6b;
+        border-radius: 12px;
+        width: 35%;
+        padding: 2%;
+        margin-right:auto;
+        margin-left:auto;
+    }
+</style>
+<h2><b>Contactez-nous</b></h2>
+<h3>Nous sommes là pour vous aider.</h3>
+<h4>
+    Notre équipe de réussite et d’engagement des clients est disponible pour vous aider à
+    obtenir les réponses et le soutien dont vous avez besoin.
+</h4>
+<h4>
+    Besoin d’une réponse immédiate ? Notre chatbot alimenté par l’IA 24 heures sur 24, 7 jours sur 7, peut vous apporter des réponses aux questions les plus fréquemment posées. Si vous ne parvenez pas à afficher le chatbot, vous pouvez activer les bloqueurs de suivi
+    et vous devrez les désactiver pour accéder au bot.
+</h4>
+
+<div class="contact">
+
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
+        <label class="required" for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+
+        <input id="submit_button" type="submit" value="Send email" />
+
+    </form>
+</div>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>

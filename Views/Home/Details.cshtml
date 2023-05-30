@@ -1,0 +1,60 @@
+﻿@model LearnApp.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomFormation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomFormation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomFormateur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomFormateur)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duréeF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duréeF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.certifiée)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.certifiée)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descriptionF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descriptionF)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <div>
+        <a href="javascript:history.back()">Back to list</a>
+    </div>
+</p>

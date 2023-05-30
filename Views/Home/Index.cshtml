@@ -1,0 +1,28 @@
+﻿@model IEnumerable<LearnApp.Models.Course>
+
+@{
+    ViewBag.Title = "OC";
+}
+
+<h2>Learning for a LifeTime</h2>
+
+<div style="float:left">
+    <img src="info.jpg" alt="informatique" />
+    <p style="text-align: center; background-color: beige; color: black ;font-size:xx-large ">
+        @Html.ActionLink("Computer science", "informatique")
+
+    </p>
+</div>
+<div style="float:right">
+    <img src="beethoven.jpg" alt="sciences humaines" />
+    <p style="text-align: center; background-color: beige; color: black; font-size: xx-large">
+        @Html.ActionLink("Arts & Humanities", "sciences_humaines")
+    </p>
+</div>
+<div style="float:left">
+    <img src="health.jpg" alt="informatique" />
+    <p style="text-align: center; background-color: beige; color: black ;font-size:xx-large ">
+        @Html.ActionLink("Health & Medicine", "medecine")
+
+    </p>
+</div>

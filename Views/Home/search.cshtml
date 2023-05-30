@@ -1,0 +1,58 @@
+﻿@model IEnumerable<LearnApp.Models.Course>
+@{
+    ViewBag.Title = "search";
+}
+
+<h2>search</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    <p>
+        Genre: @Html.DropDownList("formationGenre", "All")
+        Title: @Html.TextBox("SearchString")
+        <input type="submit" value="Filter" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nomFormation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomFormateur)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duréeF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.certifiée)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descriptionF)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomFormation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomFormateur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duréeF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.certifiée)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descriptionF)
+            </td>
+        </tr>
+    }
+
+</table>

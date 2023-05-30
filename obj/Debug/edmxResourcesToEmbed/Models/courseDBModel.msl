@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="courseDBModelStoreContainer" CdmEntityContainer="courseDBEntities">
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="courseDBModel.Course">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="catégorie" ColumnName="catégorie" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nomFormation" ColumnName="nomFormation" />
+          <ScalarProperty Name="nomFormateur" ColumnName="nomFormateur" />
+          <ScalarProperty Name="duréeF" ColumnName="duréeF" />
+          <ScalarProperty Name="certifiée" ColumnName="certifiée" />
+          <ScalarProperty Name="descriptionF" ColumnName="descriptionF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
